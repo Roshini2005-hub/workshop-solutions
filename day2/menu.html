@@ -4,45 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header align="center" style="font-size: 50px;color: brown;">ABC Restaurant</header>
-
-    <h1 align="center">Our Restaurant Menu</h2>
-
-    <h2 align="center">SLIDERS</h2>
-
-    <h3 align="center">slider-mint</h2>
-    <h3 align="center">slider-peri peri</h2>
-
-    <h4 align="center">50.00</h3>
-    <h4 align="center">50.00</h3>
-
-    <h2 align="center">CHATS</h2>
-
-    <h3 align="center">Pani Puri</h2>
-    <h3 align="center">Masala Puri</h2>
-
-    <h4 align="center">45.00</h3>
-    <h4 align="center">50.00</h3>
     <style>
-        body{
-            background-color:rgb(70, 74, 75);
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #46444459;
         }
-        h1{
-            background-color: rgba(6, 80, 114, 0.774);
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #110f0fd2;
+            color: rgba(255, 255, 255, 0.568);
         }
-        h2{
-            color: aqua;
+        section {
+            margin-bottom: 20px;
         }
-        h3
-        {
-            color:rgb(255, 0, 106);
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
         }
-        h4{
-            color:rgb(255, 0, 55)
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            background-color: #29282711;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #090547f1;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
+</head>
+<body>
+
+    <!-- Header displaying the name of the restaurant -->
+    <header>
+        <h1>ABC Restaurant</h1>
+    </header>
+
+    <!-- Main content with categorized menu items -->
+    <main>
+        <!-- Starters Section -->
+        <section>
+            <h2>DOSA</h2>
+            <ul>
+                <li>Masala Dosa<span>70.00 RS</span></li>
+                <li>Onion Dosa<span>80.00 RS</span></li>
+            </ul>
+        </section>
+
+        <!-- Main Courses Section -->
+        <section>
+            <h2>IDLI</h2>
+            <ul>
+                <li>Rava Idli<span>40.00 RS</span></li>
+                <li>Savoury Rice Cake(Idli)<span>50.00 RS</span></li>
+            </ul>
+        </section>
+
+        <!-- Desserts Section -->
+        <section>
+            <h2>DESSERTS</h2>
+            <ul>
+                <li>Chocolate Cake<span>75.00 RS</span></li>
+                <li>Fruit Salad<span>65.00</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer with the current year and restaurant name -->
+    <footer>
+        © 2024 ABC Restuarant Menu
+    </footer>
+
 </body>
 </html>
